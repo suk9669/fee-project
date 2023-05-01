@@ -27,14 +27,19 @@ body {
     width: 100vw;
     height: 100vh;
     font-size: 18px;
-    overflow-x: hidden;
     background-color: #263238;
     color: #eceff1;
+    position: fixed;
     code {
         background-color: #455a64;
         padding: 2px 5px;
         font-size: 0.8rem;
         border-radius: 5px;
+    }
+    .whole {
+        overflow-x: hidden;
+        position: absolute;
+        height: 100%;
     }
     .mainCont {
         display: grid;
