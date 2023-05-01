@@ -34,11 +34,9 @@ body {
   width: 100vw;
   height: 100vh;
   font-size: 18px;
+  overflow-x: hidden;
   background-color: #263238;
   color: #eceff1;
-}
-body .front {
-  width: min(400px, 80%);
 }
 body code {
   background-color: #455a64;
@@ -46,7 +44,85 @@ body code {
   font-size: 0.8rem;
   border-radius: 5px;
 }
-body .btn {
+body .mainCont {
+  display: grid;
+  place-items: center;
+  width: min(800px, 90%);
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  padding: 20px;
+}
+body .mainCont::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  left: 70%;
+  top: 0%;
+  background-color: #455a64;
+  opacity: 0.7;
+  border-radius: 99999px;
+}
+body .mainCont::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  left: -5%;
+  top: 75%;
+  background-color: #455a64;
+  opacity: 0.7;
+  border-radius: 99999px;
+}
+body .mainCont .front {
+  width: 100%;
+}
+body .mainCont .front > h1 {
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 900;
+  font-size: 3em;
+}
+body .mainCont .front p {
+  font-weight: 100;
+  font-size: 1em;
+}
+body .mainCont .front .devs {
+  list-style: "- ";
+  font-weight: bolder;
+  padding: 20px;
+}
+body .mainCont .front .devs li {
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+body .mainCont .front .devs .roll {
+  font-weight: normal;
+  font-style: italic;
+}
+body .mainCont .howToUse {
+  padding: 20px 0;
+}
+body .mainCont .howToUse pre {
+  width: 100%;
+  white-space: pre-wrap;
+  margin-top: 20px;
+}
+body .mainCont .howToUse pre code {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(40, 44, 52, 0.3490196078);
+}
+body .mainCont .demo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+body .mainCont .btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,15 +139,15 @@ body .btn {
           user-select: none;
   background-color: #6200ea;
 }
-body .btn:hover {
+body .mainCont .btn:hover {
   box-shadow: inset #7c4dff 20px 20px 50px, inset #311b92 0 -5px 20px;
 }
-body .btn:active {
+body .mainCont .btn:active {
   box-shadow: inset #311b92 0 5px 20px, inset #7c4dff -20px -20px 50px;
 }
-body .btn svg {
+body .mainCont .btn svg {
   height: 1.3rem;
 }
-body .btn svg path {
+body .mainCont .btn svg path {
   fill: currentColor;
 }/*# sourceMappingURL=styles.css.map */

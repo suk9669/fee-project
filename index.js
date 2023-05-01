@@ -1,7 +1,6 @@
 const addExampleHTML = () => {
     const codeBlock = document.querySelector("#codeBlock");
-    const exampleHTMLtext = `
-<head>
+    const exampleHTMLtext = `<head>
     ...
     <link rel="stylesheet"
         href="${
