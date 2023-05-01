@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #7e57c2;
+}
+
+::selection {
+  background-color: #7e57c2;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #546e7a;
+  border-radius: 10000px;
+}
+
+body {
+  font-family: "Roboto";
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
+  background-color: #263238;
+  color: #eceff1;
+}
+body .front {
+  width: min(400px, 80%);
+}
+body code {
+  background-color: #455a64;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+body .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: currentColor;
+  font-family: "Roboto";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #6200ea;
+}
+body .btn:hover {
+  box-shadow: inset #7c4dff 20px 20px 50px, inset #311b92 0 -5px 20px;
+}
+body .btn:active {
+  box-shadow: inset #311b92 0 5px 20px, inset #7c4dff -20px -20px 50px;
+}
+body .btn svg {
+  height: 1.3rem;
+}
+body .btn svg path {
+  fill: currentColor;
+}/*# sourceMappingURL=styles.css.map */

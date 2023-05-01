@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #7e57c2;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0000;
+}
+::-webkit-scrollbar-thumb {
+    background: #546e7a;
+    border-radius: 10000px;
+}
+body {
+    font-family: "Roboto";
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    background-color: #263238;
+    color: #eceff1;
+    .front {
+        width: min(400px, 80%);
+    }
+    code {
+        background-color: #455a64;
+        padding: 2px 5px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: currentColor;
+        font-family: "Roboto";
+        user-select: none;
+        background-color: #6200ea;
+        &:hover {
+            // background-color: #7c4dff;
+            box-shadow: inset #7c4dff 20px 20px 50px, inset #311b92 0 -5px 20px;
+        }
+        &:active {
+            box-shadow: inset #311b92 0 5px 20px, inset #7c4dff -20px -20px 50px;
+        }
+        // &:focus {
+        //     box-shadow: #b388ff 0 0 0 2px;
+        // }
+        svg {
+            height: 1.3rem;
+            path {
+                fill: currentColor;
+            }
+        }
+    }
+}
