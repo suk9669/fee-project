@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #7e57c2;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0000;
+}
+::-webkit-scrollbar-thumb {
+    background: #546e7a;
+    border-radius: 10000px;
+}
+body {
+    font-family: "Roboto";
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    background-color: #263238;
+    color: #eceff1;
+    position: fixed;
+    code {
+        background-color: #455a64;
+        padding: 2px 5px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+    }
+    .whole {
+        overflow-x: hidden;
+        position: absolute;
+        height: 100%;
+    }
+    .mainCont {
+        display: grid;
+        place-items: center;
+        width: min(800px, 90%);
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+        padding: 20px;
+        &::before {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            width: 300px;
+            height: 300px;
+            left: 70%;
+            top: 0%;
+            background-color: #455a64;
+            opacity: 0.7;
+            border-radius: 99999px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            width: 150px;
+            height: 150px;
+            left: -5%;
+            top: 75%;
+            background-color: #455a64;
+            opacity: 0.7;
+            border-radius: 99999px;
+        }
+        .front {
+            width: 100%;
+            > h1 {
+                text-align: center;
+                margin: 10px auto;
+                font-weight: 900;
+                font-size: 3em;
+            }
+            p {
+                font-weight: 100;
+                font-size: 1em;
+            }
+            .devs {
+                list-style: "- ";
+                font-weight: bolder;
+                padding: 20px;
+                li {
+                    display: grid;
+                    grid-template-columns: 150px auto;
+                }
+                .roll {
+                    font-weight: normal;
+                    font-style: italic;
+                }
+            }
+        }
+        .howToUse {
+            padding: 20px 0;
+            pre {
+                width: 100%;
+                white-space: pre-wrap;
+                margin-top: 20px;
+                code {
+                    backdrop-filter: blur(5px);
+                    background-color: #282c3459;
+                }
+            }
+        }
+        .demo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+        .btn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            font-size: 20px;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: currentColor;
+            font-family: "Roboto";
+            user-select: none;
+            background-color: #6200ea;
+            &:hover {
+                // background-color: #7c4dff;
+                box-shadow: inset #7c4dff 20px 20px 50px,
+                    inset #311b92 0 -5px 20px;
+            }
+            &:active {
+                box-shadow: inset #311b92 0 5px 20px,
+                    inset #7c4dff -20px -20px 50px;
+            }
+            // &:focus {
+            //     box-shadow: #b388ff 0 0 0 2px;
+            // }
+            svg {
+                height: 1.3rem;
+                path {
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+}
