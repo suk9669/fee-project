@@ -50,14 +50,16 @@ const fillData = [
 ];
 
 const populateSocialBtns = () => {
-    const cont = document.querySelector("#socialShareBtnCont .shareBtns");
+    const cont = document.querySelector(
+        "#socialShareBtnCont .social-btn-shareBtns"
+    );
     fillData.forEach((e) => {
         cont.innerHTML += `
-<button class="socialBtn"  role="button" onclick="window.open('${e.url}')" >
-    <div class="icon" style='--accentColor:${e.accentColor}'>
+<button class="social-btn-socialBtn"  role="button" onclick="window.open('${e.url}')" >
+    <div class="social-btn-icon" style='--accentColor:${e.accentColor}'>
         ${e.icon}
     </div>
-    <div class="title">${e.title}</div>
+    <div class="social-btn-title">${e.title}</div>
 </button>
         `;
     });
@@ -66,13 +68,13 @@ const populateSocialBtns = () => {
 const makeModal = () => {
     const modalHTML = `
 <div id="socialShareBtnCont" class="hide">
-    <div class="main">
-        <div class="title">Share <button class="closeBtn">&#x2716;</button></div>
-        <div class="shareBtns">
+    <div class="social-btn-main">
+        <div class="social-btn-title">Share <button class="social-btn-closeBtn">&#x2716;</button></div>
+        <div class="social-btn-shareBtns">
         </div>
-        <div class="copyLink">
-            <p class="text"><span>${window.location.href}</span></p>
-            <button class="copyBtn">
+        <div class="social-btn-copyLink">
+            <p class="social-btn-text"><span>${window.location.href}</span></p>
+            <button class="social-btn-copyBtn">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="48"
