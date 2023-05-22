@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-.main {
-  color: #000;
-}
-
 ::-moz-selection {
   background-color: #7e57c2;
 }

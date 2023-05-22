@@ -112,11 +112,13 @@ const registerEvents = () => {
             else e.currentTarget.classList.replace("hide", "show");
         }
     });
-    mainCont.querySelector(".closeBtn").addEventListener("click", (e) => {
-        mainCont.classList.replace("show", "hide");
-    });
     mainCont
-        .querySelector(".copyLink .copyBtn")
+        .querySelector(".social-btn-closeBtn")
+        .addEventListener("click", (e) => {
+            mainCont.classList.replace("show", "hide");
+        });
+    mainCont
+        .querySelector(".social-btn-copyBtn")
         .addEventListener("click", (e) => {
             window.navigator.clipboard
                 .writeText(window.location.href)

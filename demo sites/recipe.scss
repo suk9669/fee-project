@@ -8,8 +8,73 @@
 body {
     display: grid;
     grid-template-columns: 70% 30%;
-    width: 100vw;
+    width: min(1000px, 80%);
+    place-items: center;
+    align-items: start;
+    margin: auto;
     min-height: 100vh;
+    font-family: "Roboto";
     .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background-image: linear-gradient(to bottom, #ebf8f8 0, #fefefe 100%);
+        h2 {
+            margin: 10px 0;
+            padding: 5px 0;
+            font-size: 2rem;
+            border-bottom: 1px solid #1773;
+        }
+        .head {
+            width: 100%;
+            .info {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+                .loc {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .label {
+                        color: #177;
+                        font-weight: bold;
+                        font-size: 0.8rem;
+                    }
+                    .text {
+                    }
+                }
+            }
+        }
+        ul,
+        ol {
+            padding-left: 20px;
+            li {
+                padding: 5px 0;
+                img {
+                    width: 100%;
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+    .share {
+        padding: 20px;
+
+        position: sticky;
+        top: 0;
+        button {
+            padding: 10px;
+            border: 2px solid #177;
+            border-radius: 10px;
+            background: none;
+            cursor: pointer;
+            font-size: 1.25rem;
+            &:hover {
+                background: #177;
+                color: #fff;
+            }
+        }
     }
 }
