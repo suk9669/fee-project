@@ -48,6 +48,8 @@ const fillData = [
         )}&amp;body=${window.encodeURIComponent(window.location.href)}`,
     },
 ];
+if (window.customShare && window.customShare instanceof Array)
+    fillData.push(...window.customShare);
 
 const populateSocialBtns = () => {
     const cont = document.querySelector(

@@ -2,6 +2,17 @@ const addExampleHTML = () => {
     const codeBlock = document.querySelector("#codeBlock");
     const exampleHTMLtext = `<head>
     ...
+    <script>
+        / * to add custom share button, fill data in window.customShare as such */
+        window.customShare = [
+                {
+                    title: "Instagram",
+                    accentColor: "#3F729B",
+                    icon: "",
+                    url: "",
+                },
+            ];
+    </script>
     <link rel="stylesheet"
         href="${
             window.location.href.split("/").slice(0, -1).join("/") +
@@ -10,7 +21,7 @@ const addExampleHTML = () => {
     <script src="${
         window.location.href.split("/").slice(0, -1).join("/") +
         "/social-share-btns.js"
-    }"></script>  
+    }"></script>
     ...
 </head>
 <body>
