@@ -3,7 +3,7 @@ const addExampleHTML = () => {
     const exampleHTMLtext = `<head>
     ...
     <script>
-        / * to add custom share button, fill data in window.customShare as such */
+        // to add custom share button, fill data in window.customShare as such
         window.customShare = [
                 {
                     title: "Instagram",
@@ -12,6 +12,9 @@ const addExampleHTML = () => {
                     url: "",
                 },
             ];
+
+        window.customMessage = "Put your custom message here.";
+        
     </script>
     <link rel="stylesheet"
         href="${

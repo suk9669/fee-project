@@ -124,7 +124,9 @@ body .mainCont .howToUse pre code {
 body .mainCont .demo {
   display: flex;
   flex-direction: row;
+  justify-self: start;
   align-items: center;
+  padding: 20px 0;
   gap: 20px;
 }
 body .mainCont .btn {

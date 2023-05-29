@@ -113,7 +113,9 @@ body {
         .demo {
             display: flex;
             flex-direction: row;
+            justify-self: start;
             align-items: center;
+            padding: 20px 0;
             gap: 20px;
         }
         .btn {
