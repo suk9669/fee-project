@@ -29,11 +29,8 @@ const addExampleHTML = () => {
 </head>
 <body>
     ...
-    <style>
-        /* you are free to apply any styles to this button */
-    </style>
     <button class="socialShareBtn">
-        Share
+        ...
     </button>
     ...
 </body>

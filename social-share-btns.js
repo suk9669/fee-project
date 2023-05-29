@@ -16,7 +16,8 @@ const fillData = [
         url: `https://twitter.com/intent/tweet?url=${window.encodeURIComponent(
             window.location.href
         )}&text=${
-            window.encodeURIComponent(window.customMessage) ||
+            (window.customMessage &&
+                window.encodeURIComponent(window.customMessage)) ||
             window.encodeURIComponent(document.title)
         }`,
     },
